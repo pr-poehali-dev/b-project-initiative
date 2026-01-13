@@ -100,10 +100,12 @@ const Index = () => {
               <Link to="/categories" className="text-foreground hover:text-primary transition-colors font-medium">
                 Категории
               </Link>
-              <Button className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity">
-                <Icon name="PenSquare" size={16} className="mr-2" />
-                Написать
-              </Button>
+              <Link to="/auth">
+                <Button className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity">
+                  <Icon name="UserCircle" size={16} className="mr-2" />
+                  Войти
+                </Button>
+              </Link>
             </nav>
             <button className="md:hidden">
               <Icon name="Menu" size={24} />
